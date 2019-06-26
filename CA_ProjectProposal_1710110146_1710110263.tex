@@ -1,0 +1,45 @@
+\documentclass[14pt]{article}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    {\Large
+    Shiv Nadar University\par
+    Department of Computer Science and Engineering\par
+}
+    \vfill
+    {\Huge\bfseries
+CSD208: Computer Architecture\par}
+\vspace{4ex}
+
+    {\Huge\bfseries
+Project Proposal\par}
+\vspace{4ex}
+
+ {\Huge\bfseries  \emph{Cache Mispattern and Mispredictibility Analysis \emph}
+\par}
+\vspace{4ex}
+
+{\Large
+Illisha Singh (1710110146)
+\par
+R Deepa (1710110263)
+\par}
+\vfill
+
+\end{titlepage}
+
+
+\begin{abstract}
+Improving cache performance requires understanding cache behavior. However, measuring cache performance for one or two data input sets provides little insight into how cache behavior varies across all data input sets and all cache configurations. Our project aims on using locality analysis to generate a parameterized model of program cache behavior. Given a cache size and associativity, this model will be able to predict the miss rate for arbitrary data input set sizes. Experiments show this technique is within 2 percent of the hit rate for set associative caches on a set of floating-point and integer programs using array and pointer-based data structures. Building on the new model, this paper presents an interactive visualization tool that uses a three-dimensional plot to show miss rate changes across program data sizes and cache sizes and its use in evaluating compiler transformations. Other uses of this visualization tool include assisting machine and benchmark-set design. Our project also aims on using timing analysis. The aim of timing analysis is to statically find precise upper bounds on the WCET (Worst Case Execution Time), and this is a challenging problem due to micro-architectural features. The standard approach for performing cache analysis is to use some form of abstraction, and find abstract cache states at every program point, which cover all actual cache states possible during execution. These abstract cache states are then used to assign a static hit-miss classification to every access. 
+\end{abstract}
+\vspace{4ex}
+\begin{center}
+\textbf{Problem Statement}
+\end{center}
+The aim is to analyse the \textbf{miss rate} changes across program input sizes and cache sizes. Additionally, to predict program reference patterns and convert this information to a cache miss rate.
+
+Past work mainly provides three ways of locality analysis: by a compiler, which models loop nests but is not as effective for dynamic control flow and data indirection; by frequency profiling, which analyzes a program for select inputs but does not predict the behavior change in other inputs; or by runtime analysis, which cannot afford to analyze every access to every data. None of these methods adequately provides the capability of predicting the memory reference patterns across a broad range of programs and data input sizes.
+\end{document}
