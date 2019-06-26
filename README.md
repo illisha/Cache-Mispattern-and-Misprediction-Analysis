@@ -1,0 +1,2 @@
+# Cache-Mispattern-and-Misprediction-Analysis
+This paper analyses cache miss pattern behaviour and its prediction using a few algorithms; presents a simulation of cache miss rate for set associative caches on diﬀerent workloads; gives an introduction of a visualisation tool that shows a three-dimensional plot of cache miss rates and then ﬁnally concludes by giving various uses of cache miss rate prediction
